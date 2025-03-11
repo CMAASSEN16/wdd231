@@ -1,0 +1,45 @@
+:root {
+    --primary_color: #AED9E0;
+    --secondary_color: #B8F2E6;
+    --accent1_color: #5E6472;
+    --accent2_color: #403F4C;
+    --accent3_color: #FAAA8D;
+}
+
+@media only screen and (min-width:768px) {   
+    header{
+        font-size: 2rem;
+    }
+    
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header nav {
+        background-color: var(--accent2_color);
+        flex-direction: row;
+        position: static;
+        gap: 20px;
+        box-shadow: none;
+        justify-content: flex-end;
+        white-space: normal;
+    }
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    main h2 {
+        grid-column: span 3;
+        margin-top: 20px;
+    }
+
+    main p {
+        padding-bottom: 10px;
+    }
+
+
+}

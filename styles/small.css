@@ -1,0 +1,107 @@
+:root {
+    --primary_color: #AED9E0;
+    --secondary_color: #B8F2E6;
+    --accent1_color: #5E6472;
+    --accent2_color: #403F4C;
+    --accent3_color: #FAAA8D;
+}
+
+/* .volkhov-regular {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  .fira-sans-condensed-regular {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*/
+
+body {
+    background-color: var(--primary_color);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: var(--accent2_color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    color: white;
+}
+
+header button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+}
+
+header span {
+    flex-grow: 1;
+    margin: 20px;
+    white-space: nowrap;
+    font-size: 30px;
+}
+
+header nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary_color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    gap: 10px;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba( 0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+header nav.open {
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    background-color: var(--accent2_color);
+    color: blueviolet;
+}
+header img {
+    width: 125px;
+    height: auto;
+    position: relative;
+  }
+
+footer {
+    background-color: var(--accent2_color);
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+footer p {
+    margin: 10px 0;
+}
+
+footer #currentyear {
+    font-weight: bold;
+}
