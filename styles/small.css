@@ -105,6 +105,78 @@ header img {
     position: relative;
 }
 
+h1 {
+    padding: 10px;
+}
+
+h2 {
+    background-color: var(--accent1_color);
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--secondary_color);
+}
+
+.country_card img, .country_card p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+#certificates{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    border-bottom: 3px solid black;
+
+}
+
+#certificates a {
+    flex: 1;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#certificates a:hover {
+    background-color: black;
+    color: var(--accent3_color);
+}
+
+#certificateList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.certCard {
+    background-color: var(--accent1_color);
+    color: var(--secondary_color);
+    text-align: center;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 5px; 
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
 footer {
     background-color: var(--accent2_color);
     padding: 10px 0;
@@ -114,6 +186,7 @@ footer {
 
 footer p {
     margin: 10px 0;
+    padding: 10px;
 }
 
 footer #currentyear {
