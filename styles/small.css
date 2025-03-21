@@ -39,10 +39,7 @@ body {
 
 header {
     background-color: var(--accent2_color);
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -100,7 +97,7 @@ header nav a:hover {
 }
 
 header img {
-    width: 125px;
+    width: 100px;
     height: auto;
     position: relative;
 }
