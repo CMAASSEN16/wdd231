@@ -1,0 +1,39 @@
+:root {
+    --primary_color: #AED9E0;
+    --secondary_color: #B8F2E6;
+    --accent1_color: #5E6472;
+    --accent2_color: #403F4C;
+    --accent3_color: #FAAA8D;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary_color);
+    color: var(--accent1_color);
+}
+
+header {
+    background-color: var(--accent2_color);
+    /* padding: 20px; */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    color: white;
+    position: relative;
+}
+
+footer {
+    background-color: var(--accent2_color);
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+footer #currentyear {
+    font-weight: bold;
+}

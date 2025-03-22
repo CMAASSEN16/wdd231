@@ -1,191 +1,151 @@
-:root {
-    --primary_color: #AED9E0;
-    --secondary_color: #B8F2E6;
-    --accent1_color: #5E6472;
-    --accent2_color: #403F4C;
-    --accent3_color: #FAAA8D;
-}
+@media (max-width:768px) {
+    .volkhov-regular {
+        font-family: "Volkhov", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 
-.volkhov-regular {
-    font-family: "Volkhov", serif;
-    font-weight: 400;
-    font-style: normal;
-}
+    .fira-sans-condensed-regular {
+        font-family: "Fira Sans Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 
-.fira-sans-condensed-regular {
-    font-family: "Fira Sans Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+    * h {
+        font-family: "Fira Sans Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 
+    * p {
+        font-family: "Volkhov", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 
-* h {
-    font-family: "Fira Sans Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+    header button {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
+        z-index: 1001;
+    }
 
-* p {
-    font-family: "Volkhov", serif;
-    font-weight: 400;
-    font-style: normal;
-}
+    header span {
+        flex-grow: 1;
+        margin: 20px;
+        white-space: nowrap;
+        font-size: 30px;
+    }
 
-body {
-    background-color: var(--primary_color);
-    padding: 0;
-    margin: 0;
-}
+    header nav {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary_color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        gap: 10px;
+        padding: 20px 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
 
-header {
-    background-color: var(--accent2_color);
-    padding: 20px;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    color: white;
-}
+    header nav.open {
+        display: flex;
+    }
 
-header button {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: white;
-    z-index: 1001;
-}
+    header nav a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        text-align: center;
+        color: white;
+    }
 
-header span {
-    flex-grow: 1;
-    margin: 20px;
-    white-space: nowrap;
-    font-size: 30px;
-}
+    header nav a:hover {
+        text-decoration: underline;
+        background-color: var(--accent2_color);
+        color: blueviolet;
+    }
 
-header nav {
-    display: none;
-    flex-direction: column;
-    background-color: var(--primary_color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    gap: 10px;
-    padding: 20px 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
+    header img {
+        width: 100px;
+        height: auto;
+        position: relative;
+    }
 
-header nav.open {
-    display: flex;
-}
+    h1 {
+        padding: 10px;
+    }
 
-header nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    text-align: center;
-    color: white;
-}
+    h2 {
+        background-color: var(--accent1_color);
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 5px;
+        color: var(--secondary_color);
+    }
 
-header nav a:hover {
-    text-decoration: underline;
-    background-color: var(--accent2_color);
-    color: blueviolet;
-}
+    .country_card img,
+    .country_card p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
 
-header img {
-    width: 100px;
-    height: auto;
-    position: relative;
-}
+    #certificates {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+        border-bottom: 3px solid black;
+    }
 
-h1 {
-    padding: 10px;
-}
+    #certificates a {
+        flex: 1;
+        text-align: center;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
 
-h2 {
-    background-color: var(--accent1_color);
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-    border-radius: 5px;
-    color: var(--secondary_color);
-}
+    #certificates a:hover {
+        background-color: black;
+        color: var(--accent3_color);
+    }
 
-.country_card img, .country_card p{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-#certificates{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin: 10px;
-    border-bottom: 3px solid black;
+    #certificateList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
-}
-
-#certificates a {
-    flex: 1;
-    text-align: center;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-#certificates a:hover {
-    background-color: black;
-    color: var(--accent3_color);
-}
-
-#certificateList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.certCard {
-    background-color: var(--accent1_color);
-    color: var(--secondary_color);
-    text-align: center;
-    padding: 15px;
-    margin: 10px auto;
-    border-radius: 5px; 
-    width: 80%;
-    max-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
-
-footer {
-    background-color: var(--accent2_color);
-    padding: 10px 0;
-    color: white;
-    text-align: center;
-}
-
-footer p {
-    margin: 10px 0;
-    padding: 10px;
-}
-
-footer #currentyear {
-    font-weight: bold;
+    .certCard {
+        background-color: var(--accent1_color);
+        color: var(--secondary_color);
+        text-align: center;
+        padding: 15px;
+        margin: 10px auto;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
 }

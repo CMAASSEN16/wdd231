@@ -1,15 +1,8 @@
-:root {
-    --primary_color: #AED9E0;
-    --secondary_color: #B8F2E6;
-    --accent1_color: #5E6472;
-    --accent2_color: #403F4C;
-    --accent3_color: #FAAA8D;
-}
-
-@media only screen and (min-width:768px) {   
+@media (min-width:768px) {
     .img-name {
         display: flex;
         align-items: center;
+        justify-content: space-around;
     }
 
     header img {
@@ -31,17 +24,18 @@
         width: 100%;
         background-color: var(--accent1_color);
         padding: 10px 0;
-        border-radius: 8px;
     }
 
-    header nav a{
+    header nav a {
         flex: 1;
+        flex-direction: row;
         text-align: center;
         padding: 10px;
         text-decoration: none;
         color: white;
         font-size: 1.5rem;
     }
+
     main {
         max-width: 1200px;
         margin: 0 auto;
@@ -68,5 +62,4 @@
     #certificateList h3 {
         grid-column: span 3;
     }
-
 }
